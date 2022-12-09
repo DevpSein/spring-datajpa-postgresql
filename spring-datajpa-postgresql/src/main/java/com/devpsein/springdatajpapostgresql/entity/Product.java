@@ -4,7 +4,6 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.util.Date;
-
 @Entity
 @Getter
 @Setter
@@ -17,15 +16,15 @@ public class Product {
     @SequenceGenerator(name = "seq_product_increase", allocationSize = 1)
     @GeneratedValue(generator = "seq_product_increase",strategy = GenerationType.SEQUENCE)
     private Long id;
-    @Column(name = "PRODUCT_NAME")
+    @Column(name = "product_name")
     private String productName;
-    @Column(name = "QUANTITY")
+    @Column(name = "quantity")
     private Long quantity;
-    @Column(name = "CREATION_DATE")
+    @Column(name = "creationdate")
     private Date creationDate;
-    @Column(name = "PRODUCT_TYPE_ID")
+    @Column(name = "product_type_id")
     private Long productTypeId; // foreign key oluşturulacak  // Many To One
-    @Column(name = "CATEGORY_ID")
+    @Column(name = "category_id")
     private Long categoryId; // foreign key oluşturulacak // Many to One
 
 }

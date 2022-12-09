@@ -1,8 +1,5 @@
 package com.devpsein.springdatajpapostgresql.entity;
-
 import lombok.*;
-
-import javax.naming.Name;
 import javax.persistence.*;
 import java.util.Date;
 @Entity
@@ -12,18 +9,18 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
-    @SequenceGenerator(name ="USER_SEQUENCE", allocationSize = 1)
-    @GeneratedValue(generator = "USER_SEQUENCE",strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name ="seq_user", allocationSize = 1)
+    @GeneratedValue(generator = "seq_user",strategy = GenerationType.SEQUENCE)
     @Id
     private Long id;
-    @Column(name = "NAME")
+    @Column(name = "name")
     private String name;
-    @Column(name = "SURNAME")
+    @Column(name = "surname")
     private String surname;
-    @Column(name = "PASSWORD")
+    @Column(name = "password")
     private String password;
-    @Column(name = "MAIL")
+    @Column(name = "mail")
     private String mail;
-    @Column(name = "CREATION_DATE")
+    @Column(name = "creation_date")
     private Date creationDate;
 }
