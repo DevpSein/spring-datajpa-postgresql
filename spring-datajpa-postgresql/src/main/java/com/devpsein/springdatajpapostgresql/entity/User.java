@@ -15,9 +15,11 @@ public class User {
     private Long id;
     @Column(name = "name")
     private String name;
+    @Column(name = "active")
+    private boolean active = false;
     @Column(name = "surname")
     private String surname;
-    @Column(name = "password")
+    @Column(length = 15,name = "password" )
     private String password;
     @Column(name = "mail")
     private String mail;

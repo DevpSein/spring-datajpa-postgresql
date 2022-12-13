@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.util.Date;
+
 @Entity
 @Getter
 @Setter
@@ -26,5 +27,8 @@ public class Product {
     private Long productTypeId; // foreign key oluşturulacak  // Many To One
     @Column(name = "category_id")
     private Long categoryId; // foreign key oluşturulacak // Many to One
+    @Column(name = "user_id")
+    private Long userId;
+
 
 }
