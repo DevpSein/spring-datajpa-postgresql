@@ -17,5 +17,5 @@ public class ProductType {
     @GeneratedValue(generator = "seq_product_type",strategy = GenerationType.SEQUENCE )
     private Long id;
     @Column(name = "name")
-    private String name;
+    private String typeName;
 }
