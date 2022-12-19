@@ -18,4 +18,6 @@ public class ProductType {
     private Long id;
     @Column(name = "name")
     private String typeName;
+
+
 }
