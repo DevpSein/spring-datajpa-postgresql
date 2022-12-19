@@ -23,11 +23,12 @@ public class Product {
     private Long quantity;
     @Column(name = "creationdate")
     private Date creationDate;
+
     @Column(name = "product_type_id")
     private Long productTypeId; // foreign key oluşturulacak  // Many To One
     @Column(name = "category_id")
     private Long categoryId; // foreign key oluşturulacak // Many to One
-    @Column(name = "user_id")
+    @Column(name = "user_id") // foreign key oluşturulacak
     private Long userId;
 
 

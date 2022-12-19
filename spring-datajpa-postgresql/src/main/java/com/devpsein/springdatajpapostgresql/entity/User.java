@@ -25,4 +25,7 @@ public class User {
     private String mail;
     @Column(name = "creation_date")
     private Date creationDate;
+    @Column(name = "tc_no")
+    private String tcNo ;
+
 }
